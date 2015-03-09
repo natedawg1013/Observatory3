@@ -1,0 +1,15 @@
+<div ng-include="'components/navbar/navbar.html'"></div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+      <h1>User Profile</h1>
+      <p style="float: left;">
+        {{getCurrentUser().name}}
+        <br/>{{getCurrentUser().id}}
+      <br/>{{userID}}
+      <br/>{{getUserByID((string)(userID)).name}}
+      </p>
+    </div>
+  </div>
+</div>
