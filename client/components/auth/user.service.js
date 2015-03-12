@@ -17,6 +17,9 @@ angular.module('observatory3App')
         params: {
           id:'me'
         }
+      },
+      getUser: {
+        method: 'GET'
       }
 	  });
   });

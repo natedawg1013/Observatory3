@@ -5,10 +5,11 @@
     <div class="col-sm-12">
       <h1>User Profile</h1>
       <p style="float: left;">
-        {{getCurrentUser().name}}
-        <br/>{{getCurrentUser().id}}
-      <br/>{{userID}}
-      <br/>{{getUserByID((string)(userID)).name}}
+        <img src="{{ show(userID).avatar }}?s=200" alt="{{ show(userID).name }} " >
+      </p>
+      <p>
+        <h2>{{show(userID).name}}</h2>
+        <h3>{{show(userID).role}}</h3><br/>
       </p>
     </div>
   </div>
