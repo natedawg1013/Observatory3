@@ -2,15 +2,35 @@
 
 <div class="container">
   <div class="row">
-    <div class="col-sm-12">
-      <h1>User Profile</h1>
-      <p style="float: left;">
-        <img src="{{ show(userID).avatar }}?s=200" alt="{{ show(userID).name }} " >
-      </p>
-      <p>
-        <h2>{{show(userID).name}}</h2>
-        <h3>{{show(userID).role}}</h3><br/>
-      </p>
+    <h1>User Profile</h1>
+    <p>
+      <div id="noti_Container">
+        <img src="{{ show(userID).avatar }}?s=200" alt="profile" />
+        <div class="noti_bubble {{show(userID).role}}">{{show(userID).role}}</div>
+      </div>
+      <h2>{{show(userID).name}}</h2>
+      <h3>info</h3>
+      <h3>info</h3>
+      <h3>info</h3>
+      <br/>
+    </p>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <h2>Active Projects</h2>
+      <ul>
+        <li>info</li>
+        <li>info</li>
+        <li>info</li>
+      </ul>
+    </div>
+    <div class="col-md-6">
+      <h2>Past Projects</h2>
+      <ul>
+        <li>info</li>
+        <li>info</li>
+        <li>info</li>
+      </ul>
     </div>
   </div>
 </div>
